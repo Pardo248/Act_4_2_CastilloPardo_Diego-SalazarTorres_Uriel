@@ -1,19 +1,32 @@
 import React from 'react';
+import './Boton.css';
+import Typography from '../AreaDeTexto/Typography';
 
-const Boton = ({ text, onClick, variant = 'primary', type = 'button' }) => {
-  const styles = {
-    primary: "bg-blue-600 hover:bg-blue-700 text-white",
-    secondary: "bg-gray-200 hover:bg-gray-300 text-gray-800",
-    danger: "bg-red-600 hover:bg-red-700 text-white"
-  };
+const Boton = ({ 
+  label = 'label', 
+  tipo = 'primario', // 'primario', 'secundario', 'interaccion', 'deshabilitado'
+  size = 'desktop',  // 'desktop', 'mobile'
+  onClick,
+  icon,
+  className = ''
+}) => {
+  
+  // Si el tipo es 'deshabilitado', forzamos la propiedad disabled de HTML
+  const isDisabled = tipo === 'deshabilitado';
+
+  const buttonClass = `btn-base btn-${tipo} btn-${size} ${className}`.trim();
 
   return (
     <button 
-      type={type}
-      onClick={onClick}
-      className={`px-4 py-2 rounded-md transition-colors font-medium ${styles[variant]}`}
+      className={buttonClass} 
+      onClick={onClick} 
+      disabled={isDisabled}
     >
-      {text}
+      {icon && <span className="btn-icon">{icon}</span>}
+      
+      <Typography variant="body-primary" as="span" className="btn-label">
+        {label}
+      </Typography>
     </button>
   );
 };

@@ -1,0 +1,63 @@
+/* Importar la fuente Roboto con los pesos necesarios */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+/* Variables base */
+:root {
+  --text-color-default: #000000;
+  --font-family-primary: 'Roboto', sans-serif;
+}
+
+/* Clases de tipografía extraídas del diseño */
+.text-featured-title {
+  font-family: var(--font-family-primary);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-color-default);
+  line-height: normal;
+  margin: 0;
+}
+
+.text-title {
+  font-family: var(--font-family-primary);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-color-default);
+  line-height: normal;
+  margin: 0;
+}
+
+.text-subtitle {
+  font-family: var(--font-family-primary);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-color-default);
+  line-height: normal;
+  margin: 0;
+}
+
+.text-aux-title {
+  font-family: var(--font-family-primary);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-color-default);
+  line-height: normal;
+  margin: 0;
+}
+
+.text-body-primary {
+  font-family: var(--font-family-primary);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color-default);
+  line-height: normal;
+  margin: 0;
+}
+
+.text-body {
+  font-family: var(--font-family-primary);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-color-default);
+  line-height: normal;
+  margin: 0;
+}

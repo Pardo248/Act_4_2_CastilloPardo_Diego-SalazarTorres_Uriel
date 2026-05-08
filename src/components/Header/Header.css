@@ -1,0 +1,61 @@
+/* Variables base */
+:root {
+  --primary-primary: #1E5EFF;
+  --background-base: #FDFBFF;
+  --border-default: #74777F;
+}
+
+/* Contenedor base del Header */
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; 
+}
+
+/* ====================
+   VARIANTES DE TIPO
+   ==================== */
+
+/* Tipo: Principal */
+.header-principal {
+  background: var(--primary-primary);
+  color: #FFFFFF; 
+}
+
+/* Tipo: Secundario */
+.header-secundario {
+  background: var(--background-base);
+  border-bottom: 1px solid var(--border-default);
+  color: #000000;
+}
+
+/* ====================
+   VARIANTES DE TAMAÑO 
+   ==================== */
+
+/* Desktop */
+.header-desktop {
+  height: 80px;
+}
+
+/* Tablet / Medium  */
+.header-tablet.header-principal {
+  height: 72px;
+}
+.header-tablet.header-secundario {
+  height: 65px;
+}
+
+/* Mobile  */
+.header-mobile {
+  height: 59px;
+}
+
+.header-title {
+  margin: 0;
+  color: inherit; 
+}

@@ -1,0 +1,79 @@
+/* Variables de color para los botones */
+:root {
+  --btn-primary-bg: #1E5EFF;
+  --btn-interaction-bg: #D8E2FF;
+  --btn-secondary-border: #44474F;
+  --btn-disabled-bg: #E1E2EC;
+  --btn-disabled-text: #74777F;
+}
+
+/* Estilo base del botón */
+.btn-base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  gap: 10px;
+  height: 34px;
+  min-width: 86px;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ====================
+   VARIANTES DE TIPO
+   ==================== */
+
+/* Primario */
+.btn-primario {
+  background-color: var(--btn-primary-bg);
+  color: #FFFFFF;
+}
+.btn-primario:hover {
+  opacity: 0.9; 
+}
+
+/* Secundario */
+.btn-secundario {
+  background-color: transparent;
+  border: 1px solid var(--btn-secondary-border);
+  color: var(--btn-secondary-border);
+}
+.btn-secundario:hover {
+  background-color: rgba(68, 71, 79, 0.05);
+}
+
+/* Interacción */
+.btn-interaccion {
+  background-color: var(--btn-interaction-bg);
+  color: var(--btn-primary-bg); 
+}
+
+/* Deshabilitado */
+.btn-deshabilitado {
+  background-color: var(--btn-disabled-bg);
+  color: var(--btn-disabled-text);
+  cursor: not-allowed;
+  pointer-events: none; 
+}
+
+/* ====================
+   VARIANTES DE TAMAÑO
+   ==================== */
+
+/* Desktop */
+.btn-desktop {
+  padding: 0 16px;
+}
+
+/* Mobile */
+.btn-mobile {
+  padding: 0 8px;
+}
+
+.btn-base .btn-label {
+  color: inherit;
+  margin: 0;
+}

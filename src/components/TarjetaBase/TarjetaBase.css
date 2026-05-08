@@ -1,0 +1,48 @@
+/* Variables de color */
+:root {
+  /* Variante Base */
+  --tarjeta-bg-base: #FDFBFF;
+  --tarjeta-border-base: #C4C6D0;
+  
+  /* Variante Resaltada */
+  --tarjeta-bg-resaltada: #D8E2FF;
+  --tarjeta-border-resaltada: #1E5EFF;
+
+  --tarjeta-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.10);
+}
+
+/* Contenedor principal de la Tarjeta */
+.tarjeta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 239px;
+  height: 133px;
+  padding: 8px;
+  gap: 10px;
+  box-sizing: border-box;
+  box-shadow: var(--tarjeta-shadow);
+  transition: all 0.3s ease;
+  overflow: hidden; 
+}
+
+/* ====================
+   VARIANTES DE TIPO
+   ==================== */
+
+.tarjeta-base {
+  background: var(--tarjeta-bg-base);
+  border: 1px solid var(--tarjeta-border-base);
+  border-radius: 16px; 
+}
+
+.tarjeta-resaltada {
+  background: var(--tarjeta-bg-resaltada);
+  border: 1px solid var(--tarjeta-border-resaltada);
+  border-radius: 12px; 
+}
+
+.tarjeta-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
+}

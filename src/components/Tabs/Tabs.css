@@ -1,0 +1,48 @@
+/* Variables de color */
+:root {
+  --tab-active-color: #1E5EFF;
+  --tab-inactive-text: #44474F; 
+  --tab-inactive-border: #C4C7C5; 
+}
+
+/* Contenedor base de cada pestaña */
+.tab-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 47px;
+  padding: 0 16px;
+  background: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 3px solid transparent; 
+  transition: all 0.2s ease-in-out;
+}
+
+/* ====================
+   VARIANTES DE ESTADO
+   ==================== */
+
+/* Pestaña Activa */
+.tab-activa {
+  color: var(--tab-active-color);
+  border-bottom-color: var(--tab-active-color);
+}
+
+/* Pestaña No Activa */
+.tab-no-activa {
+  color: var(--tab-inactive-text);
+  border-bottom-color: var(--tab-inactive-border);
+}
+
+.tab-no-activa:hover {
+  background-color: rgba(68, 71, 79, 0.05);
+  color: #000000;
+}
+
+.tab-item .tab-label {
+  color: inherit;
+  margin: 0;
+}

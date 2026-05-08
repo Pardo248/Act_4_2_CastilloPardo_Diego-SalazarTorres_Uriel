@@ -1,0 +1,74 @@
+/* Variables de color*/
+:root {
+  --checkbox-border: #74777F;
+  --checkbox-bg-base: #FDFBFF;
+  --checkbox-primary: #1E5EFF;
+  --checkbox-disabled: #E1E2EC;
+}
+
+/* Contenedor global del componente */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  min-width: 83px;
+  padding: 4px;
+  gap: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 4px; 
+}
+
+/* Cuadrado interno*/
+.checkbox-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+/* ====================
+   VARIANTES DE ESTADO
+   ==================== */
+
+.checkbox-inactivo {
+  border: 1px solid var(--checkbox-border);
+  background: var(--checkbox-bg-base);
+}
+
+.checkbox-activo {
+  border: 1px solid var(--checkbox-primary);
+  background: var(--checkbox-primary);
+}
+
+.checkbox-deshabilitado {
+  border: 1px solid var(--checkbox-disabled);
+  background: var(--checkbox-disabled);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* ====================
+   VARIANTES DEL CUADRADO INTERNO
+   ==================== */
+
+/* Borde negro grueso para inactivo y deshabilitado */
+.checkbox-inactivo .checkbox-box,
+.checkbox-deshabilitado .checkbox-box {
+  border: 3px solid #000000; 
+}
+
+/* Borde blanco grueso cuando está activo */
+.checkbox-activo .checkbox-box {
+  border: 3px solid #FFFFFF; 
+}
+
+.checkbox-container .checkbox-label {
+  color: #000000;
+  margin: 0;
+}

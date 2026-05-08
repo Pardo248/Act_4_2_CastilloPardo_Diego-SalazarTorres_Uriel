@@ -1,0 +1,33 @@
+/* Variables base */
+:root {
+  --border-default: #74777F;
+  --background-base: #FDFBFF;
+}
+
+.datepicker-container {
+  display: flex;
+  align-items: center;
+  width: 163px;
+  height: 35px;
+  padding: 0 16px; 
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border-default);
+  background: var(--background-base);
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative; 
+  transition: border-color 0.2s ease;
+}
+
+.datepicker-container:hover {
+  border-color: #000; 
+}
+
+
+.datepicker-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #44474F; /* Color base para el icono */
+}

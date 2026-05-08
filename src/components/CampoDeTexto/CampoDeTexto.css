@@ -1,0 +1,72 @@
+/* Variables de color  */
+:root {
+  --input-bg-base: #FDFBFF;
+  --input-border-base: #74777F;
+  
+  --input-border-enfocado: #1E5EFF;
+  
+  --input-bg-error: #FFDAD6;
+  --input-border-error: #BA1A1A;
+  
+  --input-bg-deshabilitado: #E1E2EC;
+}
+
+/* Contenedor del campo de texto */
+.campo-texto-container {
+  display: flex;
+  align-items: center; 
+  width: 197px;
+  height: 30px;
+  padding: 0 6px; 
+  border-radius: 12px;
+  border: 1px solid var(--input-border-base);
+  background: var(--input-bg-base);
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Elemento input nativo */
+.campo-texto-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  outline: none; 
+  font-family: 'Roboto', sans-serif; 
+  font-size: 14px; 
+  color: inherit;
+}
+
+/* ====================
+   VARIANTES DE TIPO
+   ==================== */
+
+/* Tipo Base */
+.campo-texto-base:focus-within {
+  border-color: var(--input-border-enfocado);
+}
+
+/* Tipo Enfocado Forzado */
+.campo-texto-enfocado {
+  border-color: var(--input-border-enfocado);
+}
+
+/* Tipo Error */
+.campo-texto-error {
+    background: var(--input-bg-error);
+    border-color: var(--input-border-error);
+    color: var(--input-border-error);
+}
+
+/* Tipo Deshabilitado */
+.campo-texto-deshabilitado {
+  background: var(--input-bg-deshabilitado);
+  border-color: var(--input-border-base);
+  cursor: not-allowed;
+}
+
+.campo-texto-deshabilitado .campo-texto-input {
+  cursor: not-allowed;
+  color: #74777F;
+  pointer-events: none;
+}

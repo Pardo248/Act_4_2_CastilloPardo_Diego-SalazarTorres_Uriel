@@ -1,0 +1,49 @@
+/* Variables de color */
+:root {
+  /* Fondos */
+  --notif-bg-informativa: #D8E2FF;
+  --notif-bg-exito: #E1E2EC;
+  --notif-bg-error: #FFDAD6;
+
+  /* Colores de texto/iconos */
+  --notif-color-informativa: #000000; /* Texto oscuro estándar */
+  --notif-color-exito: #000000;
+  --notif-color-error: #BA1A1A; /* Rojo para el texto de error */
+}
+
+.notificacion-container {
+  display: inline-flex; 
+  align-items: center;
+  height: 42px;
+  padding: 0 16px;
+  gap: 10px;
+  border-radius: 12px;
+  box-sizing: border-box;
+ 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* ====================
+   VARIANTES DE TIPO
+   ==================== */
+
+.notif-informativa {
+  background-color: var(--notif-bg-informativa);
+  color: var(--notif-color-informativa);
+}
+
+.notif-exito {
+  background-color: var(--notif-bg-exito);
+  color: var(--notif-color-exito);
+}
+
+.notif-error {
+  background-color: var(--notif-bg-error);
+  color: var(--notif-color-error);
+}
+
+.notificacion-container .notif-label {
+  color: inherit;
+  margin: 0;
+}
