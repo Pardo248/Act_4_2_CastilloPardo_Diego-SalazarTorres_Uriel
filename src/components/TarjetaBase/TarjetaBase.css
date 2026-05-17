@@ -16,8 +16,6 @@
   display: flex;
   flex-direction: column;
 
-  width: 100%;
-  min-height: 415px;
 
   padding: 32px;
   gap: 20px;
@@ -46,4 +44,14 @@
 .tarjeta-container:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta-semana {
+  width: 538px !important;
+  min-height: 90px !important;
+
+  padding: 16px !important;
+  gap: 10px !important;
+
+  flex: 0 0 538px;
 }

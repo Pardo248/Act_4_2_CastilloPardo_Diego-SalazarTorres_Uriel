@@ -32,7 +32,7 @@ function App() {
             <Header
                 tipo="principal"
                 size="desktop"
-                titulo="AAAE01 SISTEMA DE CAPTURA"
+                titulo="AAAE01 | Login"
             />
 
             {/* CONTENIDO */}
@@ -105,7 +105,7 @@ function App() {
                         tipo="primario"
                         size="desktop"
                         label="Iniciar Sesion"
-                        onClick={() => navigate('/components')}
+                        onClick={() => navigate('/sistema-captura')}
                     />
 
                 </TarjetaBase>
